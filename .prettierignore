@@ -33,6 +33,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# app.tsx to avoid sorting of styles imports
-pages/_app.tsx

@@ -2,26 +2,13 @@ import { Button } from 'antd';
 import Head from 'next/head';
 import Image from 'next/image';
 
+import {
+  COUNTRY_URLS,
+  LocaleSelectButtonProps,
+  SITE_MESSAGE,
+  SITE_TITLE,
+} from '../lib/constants';
 import CuentanosLogo from '../public/LOGO-CUENTANOS.png';
-
-interface Site {
-  name: string;
-  url: string;
-}
-
-interface LocaleSelectButtonProps {
-  site: Site;
-  onClick: (e: React.SyntheticEvent) => void;
-}
-
-const siteTitle = 'CuentaNos';
-const message =
-  'Información confiable para el empoderamiento de la población en el norte de Centroamérica';
-const sites: Site[] = [
-  { name: 'El Salvador', url: 'https://elsalvador.cuentanos.org/es' },
-  { name: 'Guatemala', url: 'https://guatemala.cuentanos.org/es' },
-  { name: 'Honduras', url: 'https://honduras.cuentanos.org/es' },
-];
 
 function LocaleSelectButton({ onClick, site }: LocaleSelectButtonProps) {
   return (
@@ -40,7 +27,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{SITE_TITLE}</title>
       </Head>
       <div className="locale-select-page-container">
         <div
@@ -48,8 +35,8 @@ export default function Home() {
           style={{ display: 'flex', flexDirection: 'column' }}
         >
           <Image src={CuentanosLogo} alt="logo" />
-          <div className="locale-select-page-message">{message}</div>
-          {sites.map((site) => (
+          <div className="locale-select-page-message">{SITE_MESSAGE}</div>
+          {COUNTRY_URLS.map((site) => (
             <LocaleSelectButton
               site={site}
               key={site.name}
