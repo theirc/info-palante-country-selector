@@ -14,6 +14,7 @@ function LocaleSelectButton({ onClick, site }: LocaleSelectButtonProps) {
   return (
     <div className="locale-select-page-button-container">
       <a href={site.url}>
+        {/* Putting display: 'block', so that the button fills out available width. */}
         <Button ghost size="large" onClick={onClick} block={true}>
           {site.name}
         </Button>
