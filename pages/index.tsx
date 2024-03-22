@@ -8,7 +8,7 @@ import {
   SITE_MESSAGE,
   SITE_TITLE,
 } from '../lib/constants';
-import CuentanosLogo from '../public/LOGO-CUENTANOS.png';
+import InfoPalanteLogo from '../public/info-palante.png';
 
 function LocaleSelectButton({ onClick, site }: LocaleSelectButtonProps) {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
           className="locale-select-page-content"
           style={{ display: 'flex', flexDirection: 'column' }}
         >
-          <Image src={CuentanosLogo} alt="logo" />
+          <Image src={InfoPalanteLogo} alt="logo" />
           <div className="locale-select-page-message">{SITE_MESSAGE}</div>
           {COUNTRY_URLS.map((site) => (
             <LocaleSelectButton

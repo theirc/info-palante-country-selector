@@ -14,11 +14,11 @@ export const GOOGLE_ANALYTICS_IDS = [
 ];
 
 export const COUNTRY_URLS: Site[] = [
-  { name: 'El Salvador', url: 'https://elsalvador.cuentanos.org/es' },
-  { name: 'Guatemala', url: 'https://guatemala.cuentanos.org/es' },
-  { name: 'Honduras', url: 'https://honduras.cuentanos.org/es' },
+  { name: 'Colombia', url: 'https://infopalante.org/es' },
+  { name: 'Ecuador', url: 'https://infopalanteec.org/es' },
+  { name: 'Peru', url: 'https://peru.infopalante.org/es' },
 ];
 
-export const SITE_TITLE = 'CuentaNos';
+export const SITE_TITLE = 'InfoPalante';
 export const SITE_MESSAGE =
-  'Información confiable para el empoderamiento de la población en el norte de Centroamérica';
+  'Información confiable para el empoderamiento de la población en Sudamérica';
