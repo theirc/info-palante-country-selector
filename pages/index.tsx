@@ -8,7 +8,7 @@ import {
   SITE_MESSAGE,
   SITE_TITLE,
 } from '../lib/constants';
-import CuentanosLogo from '../public/LOGO-CUENTANOS.png';
+import CuentanosLogo from '../public/InfoPalante.png';
 
 function LocaleSelectButton({ onClick, site }: LocaleSelectButtonProps) {
   return (
